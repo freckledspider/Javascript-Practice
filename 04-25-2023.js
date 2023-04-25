@@ -42,3 +42,18 @@ const moveCharsForward = (str) =>
     .join('');
 
 // console.log(moveCharsForward('abcd'))
+
+// ----------------------------------------
+
+// Exercise 4
+// Write a javascript program to get the current date.
+// Expected output: mm-dd-yy, mm/dd/yy, or dd-mm-yyyy, dd/mm/yyyy
+
+const formatDate = (date = new Date()) => {
+    const days = date.getDate();
+    const months = date.getMonth() + 1;
+    const years = date.getFullYear();
+    return `${months}/${days}/${years}`
+}
+
+console.log(formatDate())
