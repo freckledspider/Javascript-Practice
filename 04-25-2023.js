@@ -24,5 +24,21 @@ const isEqualTo100 = (a,b) => a === 100 || b === 100 || (a + b) === 100;
 
 const getFileExtension = (str) => str.slice(str.lastIndexOf('.'))
 
-console.log(getFileExtension('index.html'))
-console.log(getFileExtension('webpack.config.js'))
+// console.log(getFileExtension('index.html'))
+// console.log(getFileExtension('webpack.config.js'))
+
+// ----------------------------------------
+
+// Exercise 3
+// Write a javasript program to replace every character n a given string with the character following it in the alphabet
+
+// String.fromCharCode
+// charCodeAt
+
+const moveCharsForward = (str) => 
+    str
+    .split('')
+    .map(char => String.fromCharCode(char.charCodeAt(0) + 1))
+    .join('');
+
+// console.log(moveCharsForward('abcd'))
