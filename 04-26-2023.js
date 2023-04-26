@@ -111,6 +111,18 @@ const isAscending = (arr) => {
 const largestEven = (arr) => 
     Math.max(...arr.filter(num => num % 2 === 0));
 
-console.log(largestEven([1,2,3,4,5,6]))
-console.log(largestEven([1,2,33,4,5,6]))
-console.log(largestEven([1,2,3,44,55,6]))
+// console.log(largestEven([1,2,3,4,5,6]))
+// console.log(largestEven([1,2,33,4,5,6]))
+// console.log(largestEven([1,2,3,44,55,6]))
+
+// ----------------------------------------
+
+// Write a javascript program to replace the first digit in a string (should contain at least digit) with $ character.
+
+const replaceFirstDigit = (str) => 
+    str.replace(/[0-9]/g, '$')
+// g is for global if needed
+
+console.log(replaceFirstDigit('Abcd1Abcde'))
+console.log(replaceFirstDigit('A123Abcde'))
+console.log(replaceFirstDigit('A1cd1Abcd1'))
