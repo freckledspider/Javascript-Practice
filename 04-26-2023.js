@@ -67,6 +67,24 @@ const contains2To4 = (str, char) =>
 const countEvenNumbers = (arr) => 
     arr.filter(num => num % 2 === 0).length;
 
-console.log(countEvenNumbers([1,2,3,4,5,6]))
-console.log(countEvenNumbers([2,2,2,2,2,2]))
-console.log(countEvenNumbers([3,5,7,9,10,100]))
+// console.log(countEvenNumbers([1,2,3,4,5,6]))
+// console.log(countEvenNumbers([2,2,2,2,2,2]))
+// console.log(countEvenNumbers([3,5,7,9,10,100]))
+
+// ----------------------------------------
+
+// Write a javascript program to find the number of even values up to a given number.
+
+const countEvenNumbers2 = (arr) =>
+    arr.filter(num => num % 2 === 0).length;
+
+const createArrayOfNumbers = (num) => {
+    const returnArray = [];
+    for (let i = 1; i <= num; i += 1) {
+        returnArray.push(i)
+    }
+    return returnArray
+}
+
+// console.log(countEvenNumbers2(createArrayOfNumbers(6)))
+// console.log(countEvenNumbers2(createArrayOfNumbers(9)))
