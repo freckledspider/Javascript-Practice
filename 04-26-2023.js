@@ -31,5 +31,15 @@ const firstHalf = (str) => str.slice(0, str.length / 2)
 const concatenate = (str1, str2) => 
     str1.slice(1) + str2.slice(1)
 
-console.log(concatenate('abc', 'def'))
-console.log(concatenate('Junior', 'Developer'))
+// console.log(concatenate('abc', 'def'))
+// console.log(concatenate('Junior', 'Developer'))
+
+// ----------------------------------------
+
+// Given two values, write a javascript program to find out which one is nearest to 100.
+
+const closestTo100 = (a,b) => (100 - a) < (100 - b) ? a : b;
+
+console.log(closestTo100(99, 1))
+console.log(closestTo100(49, 51))
+console.log(closestTo100(50, 50))
