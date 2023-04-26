@@ -3,7 +3,6 @@
 
 // ----------------------------------------
 
-// Exercise 1
 // Write a Javascript program to check two numbers and return true if one of the numbers is 100 or if the sum of the two numbers is 100.
 
 const isEqualTo100 = (a,b) => a === 100 || b === 100 || (a + b) === 100;
@@ -19,7 +18,6 @@ const isEqualTo100 = (a,b) => a === 100 || b === 100 || (a + b) === 100;
 
 // ----------------------------------------
 
-// Exercise 2
 // Write a javascript program to get the extension of a filename.
 
 const getFileExtension = (str) => str.slice(str.lastIndexOf('.'))
@@ -29,7 +27,6 @@ const getFileExtension = (str) => str.slice(str.lastIndexOf('.'))
 
 // ----------------------------------------
 
-// Exercise 3
 // Write a javasript program to replace every character n a given string with the character following it in the alphabet
 
 // String.fromCharCode
@@ -45,7 +42,6 @@ const moveCharsForward = (str) =>
 
 // ----------------------------------------
 
-// Exercise 4
 // Write a javascript program to get the current date.
 // Expected output: mm-dd-yy, mm/dd/yy, or dd-mm-yyyy, dd/mm/yyyy
 
@@ -60,7 +56,6 @@ const formatDate = (date = new Date()) => {
 
 // ----------------------------------------
 
-// Exercise 5
 // Write a javascript program to create a new string adding "New!" in front of a given string. If the given string begins with "New!" already then return the original string.
 
 const addNew = (str) => 
