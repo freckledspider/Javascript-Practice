@@ -54,8 +54,19 @@ const countChars = (str, char) =>
 const contains2To4 = (str, char) =>
     countChars(str, char) >= 2 && countChars(str, char) <= 4;
 
-console.log(contains2To4('ooh', 'o'))
-console.log(contains2To4('oh', 'o'))
-console.log(contains2To4('oooh', 'o'))
-console.log(contains2To4('ooooh', 'o'))
-console.log(contains2To4('oooooh', 'o'))
+// console.log(contains2To4('ooh', 'o'))
+// console.log(contains2To4('oh', 'o'))
+// console.log(contains2To4('oooh', 'o'))
+// console.log(contains2To4('ooooh', 'o'))
+// console.log(contains2To4('oooooh', 'o'))
+
+// ----------------------------------------
+
+// Write a javascript program to find the number of even digits in an array of integers.
+
+const countEvenNumbers = (arr) => 
+    arr.filter(num => num % 2 === 0).length;
+
+console.log(countEvenNumbers([1,2,3,4,5,6]))
+console.log(countEvenNumbers([2,2,2,2,2,2]))
+console.log(countEvenNumbers([3,5,7,9,10,100]))
