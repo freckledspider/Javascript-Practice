@@ -100,6 +100,17 @@ const isAscending = (arr) => {
     return true;
 }
 
-console.log(isAscending([1,2,3,4,5,6]))
-console.log(isAscending([1,2,5,4,3,6]))
-console.log(isAscending([1,2,3,4,6,6]))
+// console.log(isAscending([1,2,3,4,5,6]))
+// console.log(isAscending([1,2,5,4,3,6]))
+// console.log(isAscending([1,2,3,4,6,6]))
+
+// ----------------------------------------
+
+// Write a javascript program to get the largest even number from an array of integars.
+
+const largestEven = (arr) => 
+    Math.max(...arr.filter(num => num % 2 === 0));
+
+console.log(largestEven([1,2,3,4,5,6]))
+console.log(largestEven([1,2,33,4,5,6]))
+console.log(largestEven([1,2,3,44,55,6]))
