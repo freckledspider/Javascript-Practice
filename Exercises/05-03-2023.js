@@ -26,6 +26,23 @@ const objectsEqual = (a,b) => {
     return Object.keys(a).every(key => b.hasOwnProperty(key));
   }
 
-console.log(objectsEqual(objA, objB))
-console.log(objectsEqual(objA, objC))
-console.log(objectsEqual(objB, objC))
+// console.log(objectsEqual(objA, objB))
+// console.log(objectsEqual(objA, objC))
+// console.log(objectsEqual(objB, objC))
+
+// ----------------------------------------
+
+// Write a javscript program to convert a comma-separated values (CSV) string to a 2D array. A new line indivated a new row in the array.
+// Example:
+// abc, def, ghi
+// jkl, mno, pqr
+// stu, vwx, yza
+
+const parseCSV = (csvString) => 
+  csvString.split('\n').map(row => row.split(','))
+
+const str = `abc, def, ghi
+jkl, mno, pqr
+stu, vwx, yza`
+
+console.log(parseCSV(str))
