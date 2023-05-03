@@ -7,9 +7,25 @@
 
 const isLeapYear = (year) => year % 4 === 0;
 
-console.log(isLeapYear(2014));
-console.log(isLeapYear(2015));
-console.log(isLeapYear(2016));
-console.log(isLeapYear(2017));
-console.log(isLeapYear(2018));
-console.log(isLeapYear(2019));
+// console.log(isLeapYear(2014));
+// console.log(isLeapYear(2015));
+// console.log(isLeapYear(2016));
+// console.log(isLeapYear(2017));
+// console.log(isLeapYear(2018));
+// console.log(isLeapYear(2019));
+
+// ----------------------------------------
+
+// Write a javascript program to compare two objects to determine if the first one contains the same properties as the second one (which may also have additional properties)
+
+const objA = { a: 1, b: 2, c: 1 };
+const objB = { a: 1, b: 1, c: 1 };
+const objC = { a: 1, b: 1, d: 1 };
+
+const objectsEqual = (a,b) => {
+    return Object.keys(a).every(key => b.hasOwnProperty(key));
+  }
+
+console.log(objectsEqual(objA, objB))
+console.log(objectsEqual(objA, objC))
+console.log(objectsEqual(objB, objC))
