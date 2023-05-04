@@ -46,4 +46,16 @@ const countCoins = (money, coins = [25, 10, 5, 2, 1]) => {
     return totalCoins
 }
 
-console.log(countCoins(46))
+// console.log(countCoins(46))
+
+// ----------------------------------------
+
+// Write a javascript function to extract unique characters from a string.
+
+const getUniqueChars = (str) =>
+    str.split('')
+    .filter((item, index, arr) =>
+        arr.slice(index + 1).indexOf(item) === -1
+        )
+
+console.log(getUniqueChars('aaaabbbccc'))
