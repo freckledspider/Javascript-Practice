@@ -12,5 +12,18 @@ const alphabeticalOrder = (str) =>
     .sort((a,b) => a > b ? 1 : -1)
     .join('')
 
-console.log(alphabeticalOrder('webmaster'))
-console.log(alphabeticalOrder('javascript'))
+// console.log(alphabeticalOrder('webmaster'))
+// console.log(alphabeticalOrder('javascript'))
+
+// ----------------------------------------
+
+// Write a javascript function that accepts a string as a parameter and counts the number of vowels within the string.
+
+const countLetters = (
+    str, letters = ['a', 'e', 'i', 'o', 'u']) => str
+        .split('')
+        .filter(s => letters.indexOf(s) > -1)
+        .length;
+
+console.log(countLetters('abcde'))
+console.log(countLetters('abcde', ['b', 'c']))
