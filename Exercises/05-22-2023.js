@@ -85,3 +85,17 @@ class SmallestIntegerFinder {
 //       return "Obese"
 //     }
 //   }
+
+// ----------------------------------------
+
+// This kata is about multiplying a given number by eight if it is an even number and by nine otherwise.
+
+// If statement to check if number is even, else statement if otherwise.
+
+// function simpleMultiplication(number) {
+//     if (number % 2 === 0) {
+//       return number * 8
+//     } else {
+//       return number * 9
+//     }
+// }
