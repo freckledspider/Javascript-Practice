@@ -35,15 +35,53 @@
 // 5. Return smallest
 
 class SmallestIntegerFinder {
-  findSmallestInt(arr) {
-    let smallest = arr[0]; // Assume the first element is the smallest
-    // for loop to compare each element in array
-    for (let i = 1; i < arr.length; i++) {
-      if (arr[i] < smallest) {
-        smallest = arr[i];
-      }
-    }
+//   findSmallestInt(arr) {
+//     let smallest = arr[0]; // Assume the first element is the smallest
+//     // for loop to compare each element in array
+//     for (let i = 1; i < arr.length; i++) {
+//       if (arr[i] < smallest) {
+//         smallest = arr[i];
+//       }
+//     }
 
-    return smallest;
-  }
-}
+//     return smallest;
+//   }
+// }
+
+// alternative way
+// class SmallestIntegerFinder {
+//     findSmallestInt(args) {
+//       return Math.min(...args)
+//     }
+//   }
+
+
+// ----------------------------------------
+
+// Write function bmi that calculates body mass index (bmi = weight / height2).
+
+// if bmi <= 18.5 return "Underweight"
+
+// if bmi <= 25.0 return "Normal"
+
+// if bmi <= 30.0 return "Overweight"
+
+// if bmi > 30 return "Obese"
+
+// This one would just be if and if else and else statements.
+
+// function bmi(weight, height) {
+//     let bmiNum = weight / (height * height);
+//     if (bmiNum <= 18.5) {
+//       return "Underweight";
+//     }
+//     else if (bmiNum <= 25.0) {
+//       return "Normal";
+//     }
+//     else if (bmiNum <= 30.0) {
+//       return "Overweight"
+//     }
+//     else {
+//       return "Obese"
+//     }
+//   }
