@@ -42,3 +42,43 @@
 
 
 
+// -----------------------------------------------------
+
+// Javascript for Beginners - Practice With Functions by Coding For Everybody on YouTube
+
+// function doMath(num) {
+//     num = Number(num);
+//     if(num) {
+//         var newNumber = (num + 100) / 3;
+//         return newNumber
+//     } else {
+//         return false;
+//     }
+// }
+
+// var customNum = doMath(30)
+// console.log(customNum)
+
+
+
+// function $(id) {
+//     console.log("Id is:", id)
+//     return document.getElementById(id)
+// }
+
+// var title = $("title")
+// title.innerText = "Custom Inner Text"
+
+// In this example, the function $ is used to get the element with the id of title on an actual page that isn't just a .js file.
+
+
+// Celcius to fahrenheit
+// function cToF(c_num) {
+//     var fahrenheit = (c_num * 1.8) + 32;
+//     return fahrenheit;
+// }
+
+// var zero = cToF(0); console.log(zero);
+// var twenty = cToF(20); console.log(twenty);
+// var boiling = cToF(100); console.log(boiling);
+// var freezing = cToF(-40); console.log(freezing);

@@ -34,7 +34,7 @@
 // 4. After loop is complete, each element has been compared.
 // 5. Return smallest
 
-class SmallestIntegerFinder {
+// class SmallestIntegerFinder {
 //   findSmallestInt(arr) {
 //     let smallest = arr[0]; // Assume the first element is the smallest
 //     // for loop to compare each element in array
